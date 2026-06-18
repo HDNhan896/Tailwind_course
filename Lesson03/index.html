@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind Css Course Lesson 2</title>
+  <title>Tailwind Css Course Lesson 3</title>
   <link rel="stylesheet" href="./src/output.css">
 </head>
 
@@ -24,7 +24,7 @@
       </div>
     </section>
   </header>
-  <main class="mb-20">
+  <main>
     <section id="hero"
       class="mx-auto max-w-4xl flex flex-col-reverse justify-center sm:flex-row items-center p-4 mb-12">
       <article class="sm:w-1/2">
@@ -120,8 +120,40 @@
 
     <section class="mx-auto max-w-4xl my-12 scroll-mt-20">
       <h2 class="text-center text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white">Contact Us</h2>
+      <form class="max-w-4xl mx-auto flex flex-col items-start gap-4 px-5" action="">
+        <label class="text-2xl" for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Your Subject" required minlength="3" maxlength="60"
+          required minlength="3" maxlength="60" class="bg-gray-300 text-black p-3 rounded-xl w-full">
+        <label class="text-2xl" for="message">Message:</label>
+        <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10"
+          class="bg-gray-300 text-black rounded-xl p-3 w-full "></textarea>
+        <button type="submit"
+          class="bg-teal-700 hover:opacity-70 active:bg-teal-500 p-3 w-43 text-2xl rounded-xl cursor-pointer">Submit</button>
+      </form>
     </section>
   </main>
+  <footer class="bg-teal-700">
+      <section class="max-w-4xl mx-auto p-3 flex flex-col sm:flex-row sm:justify-between">
+        <address class="text-xl">
+            <h2>Acme Rocket-Powered Products, Inc.</h2>
+            555 Astro Way
+            <br>Fairfield, New Jersey 12345-5555
+            <br>Email: <a href="mailto:docaobangcho@gmail.com">docaobangcho@gmail.com</a>
+            <br>Phone: <a href="tel:03636363636">03636363636</a>
+        </address>
+        <nav class="hidden md:flex text-xl">
+          <ul clas="flex flex-col">
+            <li><a href="#">Our Rockets</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="text-xl">
+          <p class="text-right">Copyright © 2022</p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
 </body>
 
 </html>
